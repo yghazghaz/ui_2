@@ -34,7 +34,7 @@ class _CustomCardState extends State<CustomCard> {
       color: Colors.white,
       shadowColor: Colors.white,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, // تم التصحيح: كانت .start
+        crossAxisAlignment: CrossAxisAlignment.start, 
         children: [
           Stack(
             children: [
@@ -51,7 +51,7 @@ class _CustomCardState extends State<CustomCard> {
                 bottom: 10,
                 right: 10,
                 child:
-                    (widget.count > 0) // أضفت شرط مناسب كمثال
+                    (widget.count > 0) 
                     ? Container(
                         width: 85,
                         height: 38,
@@ -64,7 +64,7 @@ class _CustomCardState extends State<CustomCard> {
                             SizedBox(width: 10),
                             GestureDetector(
                               onTap:
-                                  widget.onTapdelete, // يمكنك استخدامها للحذف
+                                  widget.onTapdelete,
                               child: Icon(
                                 Icons.delete_outline_rounded,
                                 color: Colors.black,
@@ -77,11 +77,11 @@ class _CustomCardState extends State<CustomCard> {
                               style: TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,
-                              ), // تم التصحيح
+                              ), 
                             ),
                             SizedBox(width: 10),
                             GestureDetector(
-                              onTap: widget.onTap, // تم التصحيح: كانت onTap فقط
+                              onTap: widget.onTap,
                               child: Icon(
                                 Icons.add,
                                 color: Colors.black,
@@ -92,7 +92,7 @@ class _CustomCardState extends State<CustomCard> {
                         ),
                       )
                     : GestureDetector(
-                        onTap: widget.onTap, // إضافة دالة للإضافة
+                        onTap: widget.onTap, 
                         child: CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 16,
@@ -105,12 +105,12 @@ class _CustomCardState extends State<CustomCard> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // تم التصحيح
+              crossAxisAlignment: CrossAxisAlignment.start, 
               children: [
                 Text(
                   widget.name,
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                ), // تم التصحيح
+                ), 
                 SizedBox(height: 5),
                 Row(
                   mainAxisSize: MainAxisSize.min,
@@ -121,7 +121,7 @@ class _CustomCardState extends State<CustomCard> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                      ), // تم التصحيح
+                      ), 
                     ),
                   ],
                 ),
@@ -131,7 +131,7 @@ class _CustomCardState extends State<CustomCard> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                  ), // تم التصحيح
+                  ), 
                 ),
               ],
             ),
